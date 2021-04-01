@@ -4,6 +4,7 @@ extern crate opengl_graphics;
 extern crate piston;
 
 use crate::piston::ReleaseEvent;
+use crate::entity::*;
 use piston::Button;
 use piston::PressEvent;
 use piston::keyboard::Key;
@@ -12,6 +13,8 @@ use opengl_graphics::{GlGraphics, OpenGL};
 use piston::event_loop::{EventSettings, Events};
 use piston::input::{RenderArgs, RenderEvent, UpdateArgs, UpdateEvent};
 use piston::window::WindowSettings;
+
+mod entity;
 
 const WIDTH: u32 = 640;
 const HEIGHT: u32 = 480;
